@@ -1,12 +1,17 @@
-import { terser } from "rollup-plugin-terser";
+import terser from "@rollup/plugin-terser";
 
 export default {
-    input: "./index.js",
-    output: {
-        file: 'dist/usevue.cjs.js',
-        format: "cjs",
-    },
-    plugins: [
-        terser({ compress: { drop_console: true } })
-    ]
-}
+  input: "./src/main.js",
+  output: {
+    file: "dist/usevue.cjs.js",
+    format: "cjs",
+  },
+  plugins: [
+    terser({
+      compress: {
+        drop_console: true,
+      },
+      sourceMap: true,
+    }),
+  ],
+};

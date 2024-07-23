@@ -1,1 +1,1 @@
-"use strict";const{VueLoaderPlugin:e}=require("vue-loader");module.exports=(u,s)=>({name:"docusaurus-plugin-usevue",configureWebpack:(u,s,r)=>({module:{rules:[{test:/\.vue$/,use:["vue-loader"]}]},plugins:[new e]})});
+"use strict";const{VueLoaderPlugin:e}=require("vue-loader");module.exports=(s,u)=>({name:"docusaurus-plugin-usevue",configureWebpack:(s,u,r)=>({module:{rules:[{test:/\.vue$/,use:["vue-loader"]},{test:/\.scss$/,use:["vue-style-loader","css-loader","sass-loader"]}]},plugins:[new e]})});

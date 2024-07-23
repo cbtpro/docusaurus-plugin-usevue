@@ -6,18 +6,19 @@
   "scripts": {
     "build": "rollup --config"
   },
-  "keywords": ["docusaurus","docusaurus-plugin","vue"],
+  "keywords": [
+    "docusaurus",
+    "docusaurus-plugin",
+    "vue"
+  ],
   "author": "lsh",
   "license": "ISC",
   "devDependencies": {
-    "rollup": "^2.58.0",
-    "rollup-plugin-terser": "^7.0.2",
+    "@rollup/plugin-terser": "^0.4.4",
     "sass-loader": "^14.2.1",
     "ts-loader": "^9.5.1",
-    "vue-style-loader": "^4.1.3"
-  },
-  "dependencies": {
     "vue": "^3.4.33",
-    "vue-loader": "^17.4.2"
+    "vue-loader": "^17.4.2",
+    "vue-style-loader": "^4.1.3"
   }
 }
